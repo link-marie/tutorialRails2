@@ -27,16 +27,20 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'bootstrap-sass', '3.4.1'
+gem 'bootstrap'
 gem 'uglifier'
 gem 'jquery-rails'
-gem 'bootstrap'
+
 
 gem 'bcrypt',         '3.1.12'
 
-gem 'faker',          '1.9.1'
+gem 'faker',          '2.13.0'
 
-gem 'will_paginate',           '3.1.7'
+gem 'will_paginate',           '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'
+
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick',             '4.9.5'
 
 
 group :development, :test do
@@ -51,8 +55,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  # gem 'spring'
+  # gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
@@ -69,6 +73,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
